@@ -78,7 +78,7 @@ public:
 
 > memorize search: O(n) time, O(n) space, n is nodes number.
 
-In DFS solution, program has a lot of duplicated useless function call. For example2, dfs(0,0) and dfs(1,1) are call dfs(0, 1). So, We could cache the result of dfs(0,1), and just return the result directly. Thus, we only need one function call for one node.
+In DFS solution, program has a lot of duplicated useless function call. For example2, dfs(0,0) and dfs(1,1) are call dfs(0, 1). Then, We could cache the result of dfs(0,1), and just return the result directly. Accrodingly we only need one function call for each node.
 
 simple solution for references:
 
