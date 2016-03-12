@@ -37,7 +37,7 @@ The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
 
 *note*: this solution is TLE.
 
-We could use two-dimensions array `dp` to storage that the maxmium length of path start from node(i,j). For example1, dp[0][0] is 1, dp[2][2] is 4. It's easy to know that: `dp[i][j]` will be `dp[i+1][j] + 1` if nums[i][j] < nums[i+1][j]. this rule is also satisfied with nums[i-1][j], nums[i][j-1], nums[i][j+1]（they are adjacent nodes)。
+We could use two-dimensional array `dp` to storage that the maxmium length of path start from node(i,j). For example1, dp[0][0] is 1, dp[2][2] is 4. It's easy to know that: `dp[i][j]` will be `dp[i+1][j] + 1` if nums[i][j] < nums[i+1][j]. this rule is also satisfied with nums[i-1][j], nums[i][j-1], nums[i][j+1]（they are adjacent nodes)。
 .
 
 So, We could use DFS algorithm as following:
